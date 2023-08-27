@@ -107,4 +107,16 @@ body {
   color: var(--primary-text-color);
 }
 
+.share-container {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  column-gap: 10px;
+}
 
