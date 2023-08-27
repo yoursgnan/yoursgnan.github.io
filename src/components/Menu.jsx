@@ -1,11 +1,8 @@
 const Menu = () => {
-    function openMenu() {
-        console.log('clicked');
-    }
     return (
         <div className="menu-container">
             <div className='menu-holder'>
-                <div className='menu' onClick={openMenu()}>
+                <div className='menu active'>
                     <span className="material-symbols-outlined">
                         home
                     </span>

@@ -11,6 +11,7 @@ body {
 
 :root{
   --primary-color: #BE97F0;
+  --primary-color-light: #dcc8f5;
   --secondary-color: #FDE5EC;
   --shadow-color: #e6e6e6;
   --primary-text-color: #635A6E;
@@ -75,17 +76,18 @@ body {
 
 .menu-container {
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   transform: translate(-50%);
-  background: #FFFFFF80;
-  border-radius: 10px;
-  min-width: 400px;
+  background: #FFFFFF;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-width: 380px;
   box-shadow: 1px 2px 20px var(--secondary-text-color);
 }
 .menu > p {
   margin: 3px;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 .menu-holder {
   width: 100%;
@@ -101,6 +103,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+
+.active {
+  background: var(--primary-color-light);
+  border-radius: 20px;
 }
 
 .material-symbols-outlined {
