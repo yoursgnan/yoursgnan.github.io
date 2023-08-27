@@ -1,10 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
+@media screen and (max-width: 400px) {
+  .menu-container{
+    bottom: 0px;
+  }
+}
+
 :root{
   --primary-color: #BE97F0;
   --secondary-color: #FDE5EC;
@@ -13,7 +17,8 @@ body {
   --secondary-text-color: #ABA4B3;
 }
 .navbar {
-  background: white;
+  overflow: auto;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 4px 10px var(--shadow-color);
 
 }
@@ -24,6 +29,7 @@ body {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 10px;
 }
 
 .contact-button {
@@ -38,4 +44,67 @@ body {
   font-weight: 800;
 
 }
+
+.main-content {
+  display: grid;
+  place-items: center;
+  color: var(--primary-text-color)
+}
+
+.main-content-container {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width: 800px;
+}
+
+.greet1{
+  font-size: 60px;
+}
+.greet2 {
+  font-size: 30px;
+}
+.my-name {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.about-me-bio {
+  color:var(--secondary-text-color);
+}
+
+.menu-container {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #FFFFFF80;
+  border-radius: 10px;
+  min-width: 400px;
+  box-shadow: 1px 2px 20px var(--secondary-text-color);
+}
+.menu > p {
+  margin: 3px;
+  color: var(--secondary-text-color);
+}
+.menu-holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.menu{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  color: var(--primary-text-color);
+}
+
 
