@@ -1,0 +1,89 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #FEE440;
+}
+
+#root {
+  /* max-width: 1280px; */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.score-board-container{
+  background: #34757e; 
+  padding: 1rem;
+  border: solid 2px black;
+  margin: 1.5rem; 
+}
+.score-board-container > h3{
+  color:white;
+}
+.player-info-container {
+  display: flex;
+  justify-content: space-around;
+}
+.game-board{
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.game-board-container {
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+  margin-top: 1rem;
+}
+
+.grid {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px;
+  font-size: 3rem;
+  border-radius: 3px;
+}
+
+h3,h4,p,h1{
+  margin: 0px;
+}
+
+.player1{
+  color: #00BBF9;
+  padding: 0.5rem;
+}
+.player2{
+  color: #00F5D4;
+  padding: 0.5rem;
+}
+.app-name {
+  color: #3A2E39;
+}
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+}
+.replay-button {
+
+  border: solid 2px #00BBF9;
+  background: transparent;
+  color: #00BBF9; 
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 5px; 
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.next-round {
+  background: #00BBF9;
+  border: solid transparent;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 5px; 
+  font-family: 'Poppins', sans-serif;
+}
