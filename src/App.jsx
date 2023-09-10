@@ -1,18 +1,16 @@
-import NavBar from './components/NavBar'
-import Content from './components/Content'
-import Menu from './components/Menu'
+
 import data from './data'
+import AboutMe from './fragments/AboutMe'
+import ProjectsFragment from './fragments/Projects'
+
 import './App.css'
 import { useState } from 'react'
 
 function App() {
-    const [position,setPosition] = useState(1)
-
     return (
       <>
-        <NavBar />
-        <Content data={data} setPosition={setPosition} position={position}/>
-        <Menu setPosition={setPosition} position={position}/>
+        <AboutMe data={data.about_me}/>
+        <ProjectsFragment data={data.projects}/>
       </>
     )
 }
