@@ -1,17 +1,21 @@
 
 import data from './data'
 import AboutMe from './fragments/AboutMe'
-import BoxItems from './components/BoxItems'
+import ProjectsFragment from './fragments/Projects'
+import NavBar from './fragments/NavBar'
+import EmptyDiv from './components/EmptyDiv'
 
 import './App.css'
 import { useState } from 'react'
 
 function App() {
     return (
-      <>
-        {/* <BoxItems/> */}
+      <div className='main-content'>
+        <NavBar />
+        <EmptyDiv />
         <AboutMe data={data.about_me}/>
-      </>
+        <ProjectsFragment data={data.projects}/>
+      </div>
     )
 }
 

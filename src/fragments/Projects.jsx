@@ -2,21 +2,23 @@ import ProjectBox from '../components/ProjectBox'
 
 const ProjectsFragment = ({data}) => {
     return (
-        <div className='box-container project-box-container'>
+        <div id="projects">
+        
             <h2>Real time Projects</h2>
             <div className="projects-container">
                 {
-                    data.real_time.map(object=><ProjectBox project={object}/>)
+                    data.real_time.map(object=><ProjectBox project={object} key={object.project_name}/>)
                 }
             </div>
-            <div className='empty-div'></div>
+        
             <h2>Self Interest Projects</h2>
             <div className="projects-container">
                 {
-                    data.self_interest.map(object=><ProjectBox project={object}/>)
+                    data.self_interest.map(object=><ProjectBox project={object} key={object.project_name}/>)
                 }
             </div>
         </div>
+        
     )
 }
 
