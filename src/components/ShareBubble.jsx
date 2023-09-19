@@ -1,7 +1,7 @@
 const ShareBubble = (props) => {
     return (
-        <a href={props.link}>
-            <img src={props.src} width={30} height={30}/>
+        <a href={props.link} className={props.className} >
+            <img src={props.src} width={20} height={20}/>
         </a>
     )
 }
