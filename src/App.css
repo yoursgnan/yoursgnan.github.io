@@ -21,6 +21,7 @@ body {
   --purple: #E1D5F4;
   --orange: #FFC69E;
   --white: #FFFFFF;
+  --shadow-color: #dfdddd;
 }
 .main-content{
   display: flex;
@@ -54,7 +55,7 @@ body {
   width: fit-content;
   padding: 3rem; 
   border-radius: 0.5rem;
-  box-shadow: 0 5px 15px #dfdddd;
+  box-shadow: 0 5px 15px var(--shadow-color);
 }
 
 
@@ -134,7 +135,7 @@ body {
   padding: 2rem;  
   border-radius: 0.5rem;
   border: solid 1px black;
-  box-shadow: 0 5px 10px #ebebeb;
+  box-shadow: 0 5px 10px var(--shadow-color);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -178,7 +179,7 @@ body {
   top:0px;
   height: 8%;
   background: var(--white);
-  box-shadow: 0 3px 8px #dfdddd;
+  box-shadow: 0 3px 8px var(--shadow-color); 
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -201,7 +202,23 @@ body {
 }
 
 @media (prefers-color-scheme: dark){
+  #root {
+    background: #2f283a;
+  }
   :root {
-    --purple: #180438;
+    --shadow-color: none;
+    --primary-box-color: rgb(81, 76, 105);
+    --primary-text-color: rgb(251, 251, 255); 
+    --secondary-text-color: rgb(251, 251, 255);
+    --purple: rgb(102, 105, 156);
+    --orange: #cc8653; 
+    --white: rgb(56, 57, 78);
+  }
+  .project-banner-wrapper > h3{
+    color: rgb(251, 251, 255);
+  }
+
+  a{
+    color: rgb(126, 126, 255);
   }
 }
