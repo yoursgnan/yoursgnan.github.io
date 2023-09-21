@@ -1,3 +1,6 @@
+import xox from './assets/xox.png'
+import portflio from './assets/portfolio.jpg'
+import erp from './assets/erp.png'
 const data = {
     about_me: {
         name: 'Gnana Prakash',
@@ -6,6 +9,7 @@ const data = {
     projects: {
         self_interest: [
             {
+                project_image: portflio,
                 project_name: 'My First portfolio',
                 project_details: "I created my first portfolio when i doing my graduation which show case my project i have done",
                 main_app_frame: false,
@@ -15,6 +19,7 @@ const data = {
     
             },
             {
+                project_image: false,
                 project_name: 'Pip Application',
                 project_details: "During my graduation i made and app which show any YouTube video in picture in picture mode",
                 main_app_frame: 'Android studio',
@@ -22,6 +27,7 @@ const data = {
                 redirect_url: 'https://gnana-prakash.github.io/pipyoutube',
             },
             {
+                project_image: xox,
                 project_name: 'Tic Tac Toe',
                 project_details: 'Made small game by using react front end framework',
                 main_app_frame: 'React Js',
@@ -31,6 +37,7 @@ const data = {
         ],
         real_time: [
             {
+                project_image: erp,
                 project_name: 'Business Development',
                 project_details: "I worked on some modules on odoo framework such as HR, Project module.\
                 During this project i also worked on UI/UX of landing page in the previous company",

@@ -53,8 +53,8 @@ body {
   background: var(--white);
   width: fit-content;
   padding: 3rem; 
-  border-radius: 1rem;
-  box-shadow: 0 5px 30px #dfdddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px #dfdddd;
 }
 
 
@@ -132,11 +132,16 @@ body {
   margin: 1rem;
   background: var(--white);
   padding: 2rem;  
-  border-radius: 1rem;
-  box-shadow: 0 5px 30px #ebebeb;
+  border-radius: 0.5rem;
+  border: solid 1px black;
+  box-shadow: 0 5px 10px #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .project-languages-container{
   display: flex;
+  flex-wrap: wrap;
 }
 .text-bubble {
   background: var(--purple);
@@ -158,6 +163,12 @@ body {
 .project-banner-wrapper > h3 {
   margin: 0px;
 }
+.project-image-banner{
+ flex-basis: 200px;
+}
+.project-image{
+ 
+}
 .project-details-content{
   font-size: 13px;
   color: var(--secondary-text-color)
@@ -176,8 +187,21 @@ body {
 .empty-div{
   height: 40px;
 }
+.visit-languages-container{
+  display: flex;
+  justify-content: space-between;
+}
+.theme-container{
+  cursor: pointer;
+}
 @media (max-width:500px) {
   .projects-container{
     grid-template-columns: repeat(1,1fr); 
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --purple: #180438;
   }
 }

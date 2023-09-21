@@ -4,19 +4,17 @@ import moon from '../assets/moon-stars.png'
 const NavBar = () => {
     const [darkMode ,setDarkMode] = useState(false)
     const changeTheme = () => {
-        setDarkMode(true)
+        console.log('function calling..')
+        setDarkMode(!darkMode)
     }
     return (
         <div className="nav-bar-container">
             <div>
                 <p class="mydisplayid">@yoursgnan</p>
             </div>
-            <div onClick={()=>changeTheme}>
+            <div onClick={changeTheme} className="theme-container">
                 {
-                !darkMode && <img src={moon} width={15} height={15}/>
-                }
-                {
-                    darkMode && <img src={sun} width={15} height={15}/>
+                <img src={!darkMode ?moon:sun} width={15} height={15}/>
                 }
             </div>
         </div>
