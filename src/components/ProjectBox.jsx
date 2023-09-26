@@ -31,7 +31,7 @@ const ProjectBox = ({project}) => {
                         </div>
                         <div>
                         {
-                            project.redirect_url.redirect_url!=false && <a href={project.redirect_url} target="new">visit</a>
+                            project.redirect_url.redirect_url!=false && <a href={project.redirect_url} target="new" class="visit-link">visit</a>
                         }
                         </div>
                     </div>
