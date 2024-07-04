@@ -1,10 +1,10 @@
 import xox from './assets/xox.png'
 import portflio from './assets/portfolio.jpg'
-import erp from './assets/erp.png'
+import erp from './assets/odoo-logo-main-banner.jpeg'
 const data = {
     about_me: {
         name: 'Gnana Prakash',
-        about: "I'm a Software developer, Me as technology enthusiast, always looking for the opportunities which constantly drives me and encourages me to learn something new in the everyday trends."
+        about: "With a strong foundation in software development and a solid knowledge of the ODOO framework, I bring expertise in both ERP systems and full-stack development using the MERN (MongoDB, Express.js, React, Node.js) stack. My professional journey has been characterized by a commitment to delivering high-quality solutions, continuous learning, and contributing to process improvement."
     },
     projects: {
         self_interest: [

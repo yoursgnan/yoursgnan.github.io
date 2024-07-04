@@ -11,8 +11,8 @@ import { useState } from 'react'
 function App() {
     return (
       <div className='main-content'>
-        <NavBar />
-        <EmptyDiv />
+        {/* <NavBar /> */}
+        {/* <EmptyDiv /> */}
         <AboutMe data={data.about_me}/>
         <ProjectsFragment data={data.projects}/>
       </div>

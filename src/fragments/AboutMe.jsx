@@ -13,26 +13,26 @@ const AboutMe = ({data}) => {
         <div className="box-container about-box-container">
             <div className="about-content-holder">
                 <div className='profile-container'>
-                    <div class="flex-container flex1">
-                        <img src={myphoto}/>
-                    </div>
-                    
                     <div class="flex-container flex2">
                         <div className="text-container">
-                            <h2>{data.name}</h2>
+                            Hey there,
+                            <h1>I'am {data.name}</h1>
+                            <p>Software Developer</p>
+                        </div>
+                        <div class="about-text-container">
+                            <p class="about-text">{data.about}</p>
                         </div>
                         <div className="share-container">
+                            <Button text="Connect" link="mailto:gnanaprakash19102000@gmail.com" src={connect}/>
                             <ShareBubble src={linkedin} link="https://www.linkedin.com/in/iamgnanaprakash" className="share-bubble"/>
                             <ShareBubble src={insta} link="https://www.instagram.com/yoursgnan" className="share-bubble"/>
                         </div>
                     </div>
                 </div>
-                <div class="about-text-container">
-                    <p class="about-text">{data.about}</p>
-                </div>
+                
                 <div class="buttons-container">
-                    <Button text="View Works" link="#projects" src={briefcase}/>
-                    <Button text="Connect" link="mailto:gnanaprakash19102000@gmail.com" src={connect}/>
+                    {/* <Button text="View Works" link="#projects" src={briefcase}/> */}
+                    
                 </div>
             </div>
         </div>
